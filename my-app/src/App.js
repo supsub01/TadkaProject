@@ -1,18 +1,13 @@
-import Button from 'react-bootstrap/Button';
-//import logo from './logo.svg';
-//import './App.css';
-import './custom.scss';
+import Home from './Home';
+import newRecipe from './newRecipe';
+import { Route } from 'react-router-dom';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Welcome to Tadka Project! 🍛</h1>
-        <h2>Supriya, here are your recipes:</h2>
-        {/*<img src={logo} className="App-logo" alt="logo" />*/}
-        <Button size="lg" variant="dark">WHAT SHOULD I EAT FOR DINNER?</Button>
-
-      </header>
+          <Route exact path="/" component={Home}/>
+          <Route exact path="/newRecipe" component={newRecipe}/> 
     </div>
   );
 }
