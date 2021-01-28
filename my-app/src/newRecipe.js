@@ -20,7 +20,7 @@ function newRecipe() {
             {/* RecipeName */}
             <Form.Group controlId="addRecipeName">
               <Form.Row>
-                <Col sm="4">
+                <Col sm="3">
                   <Form.Label>Recipe Name:</Form.Label>
                 </Col>
                 <Col sm="9">
@@ -38,14 +38,15 @@ function newRecipe() {
                 <Col sm="3">
                   <Form.Label>Ingredients:</Form.Label>
                 </Col>
-                <Col sm="4">
+                <Col sm="6">
                   <Form.Control type="text" placeholder="Enter Ingredient Name" />
                 </Col>
-                <Col sm="3.5">
-                  <Form.Control type="text" placeholder="Enter Ingredient Amount" />
+                <Col sm="3">
+                  <Form.Control type="text" placeholder="Enter Amount" />
                 </Col>
                 </Form.Row>
                 <Form.Row>
+                  {'\n '}
                   <Button variant="outline-dark" size= "sm" className="addButton" >
                     + Add another Ingredient
                   </Button>
@@ -61,7 +62,7 @@ function newRecipe() {
                 <Col sm="3">
                   <Form.Label>Preparation:</Form.Label>
                 </Col>
-                <Col sm="7">
+                <Col sm="9">
                   <Form.Control type="text" placeholder="Step 1" />
                 </Col>
                 </Form.Row>
@@ -79,7 +80,7 @@ function newRecipe() {
                 <Col sm="3"> 
                   <Form.Label>Recipe Notes</Form.Label>
                 </Col>
-                <Col sm="7">
+                <Col sm="9">
                   <Form.Control as="textarea" rows={3} placeholder="Chef's tips..."/>`
                 </Col>
               </Form.Row>
@@ -89,7 +90,7 @@ function newRecipe() {
             {/* TODO: Recipe Tags */}
 
             {/* Add Recipe Button */}
-            <Button variant="primary" type="submit">
+            <Button variant="dark" type="submit">
               Add My Recipe
             </Button>
           </Form>

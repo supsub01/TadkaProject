@@ -17,12 +17,15 @@
     pointer-events: none;
   }
 
-  .addButton{
+  .form-row{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+    justify-content: center;
+ }
   
+ .addButton{
+  margin-top:20px;
+
+}
 //   @media (prefers-reduced-motion: no-preference) {
 //     .App-logo {
 //       animation: App-logo-spin infinite 20s linear;
